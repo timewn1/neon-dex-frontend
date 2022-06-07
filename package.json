@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@project-serum/anchor": "^0.17.0",
+    "@project-serum/serum": "0.13.38",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.29.2",
+    "bn.js": "^5.2.0",
+    "borsh": "^0.6.0",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "ts-mocha": "^8.0.0"
+  },
+  "scripts": {
+    "idl": "node test/idlToTs",
+    "test": "env MY_WALLET=$HOME/.config/solana/id.json ts-mocha tests/*.js"
+  }
+}
